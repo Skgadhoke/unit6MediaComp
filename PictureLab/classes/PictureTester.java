@@ -17,6 +17,43 @@ public class PictureTester
     beach.explore();
   }
   
+   /** Method to test keepOnlyBlue */
+  public static void testkeepOnlyBlue()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.keepOnlyBlue();
+    beach.explore();
+  }
+  
+  /** Method to test grayScale*/
+  public static void testGrayScale()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.grayScale();
+    beach.explore();
+  }
+  
+  /** Method to test negate*/
+  public static void testNegate()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.negate();
+    beach.explore();
+  }
+  
+  /** Method to test underWater*/
+  public static void testUnderWater()
+  {
+    Picture water = new Picture("water.jpg");
+    water.explore();
+    water.underWater();
+    water.explore();
+  }
+  
+  
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -25,6 +62,61 @@ public class PictureTester
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
+  
+  /** Method to test mirrorVerticalRightToLeft */
+  public static void testMirrorVerticalRightToLeft()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
+  /** Method to test mirrorHorizontal */
+  public static void testMirrorHorizontal()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontal();
+    caterpillar.explore();
+  }
+  
+  /** mirrorHorizontalBotToTop */
+  public static void testMirrorHorizontalBotToTop()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontalBotToTop();
+    caterpillar.explore();
+      
+  }
+      
+  /** mirrorDiagonal */
+  public static void testMirrorDiagonal()
+    {
+      Picture caterpillar = new Picture("caterpillar.jpg");
+      caterpillar.explore();
+      caterpillar.mirrorDiagonal();
+      caterpillar.explore();
+   }
+
+   /** mirrorDiagonalRightToLeft */
+  public static void testMirrorDiagonalRightToLeft()
+    {
+      Picture caterpillar = new Picture("caterpillar.jpg");
+      caterpillar.explore();
+      caterpillar.mirrorDiagonalRightToLeft();
+      caterpillar.explore();
+   }
+    /** mirrorPossessed */
+  public static void testMirrorPossessed()
+    {
+      Picture caterpillar = new Picture("caterpillar.jpg");
+      caterpillar.explore();
+      caterpillar.mirrorPossessed();
+      caterpillar.explore();
+   }
+
+    
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
